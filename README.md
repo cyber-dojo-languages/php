@@ -1,3 +1,3 @@
-# chapel 1.15.0
+# php 7.0.18
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/chapel-1.15.0.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/php-7.0.18.svg?branch=master)
