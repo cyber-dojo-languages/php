@@ -1,3 +1,3 @@
-# php 7.0.22
+# php 7.1.11
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/php-7.0.22.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/php-7.1.11.svg?branch=master)
