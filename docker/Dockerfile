@@ -15,4 +15,5 @@ LABEL maintiner=jon@jaggersoft.com
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get install --yes php-cli
+RUN apt-get update \
+ && apt-get install --yes php-cli
