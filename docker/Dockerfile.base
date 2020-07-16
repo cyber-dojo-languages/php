@@ -1,2 +1,2 @@
-FROM php:buster
+FROM php:zts-alpine
 LABEL maintiner=jon@jaggersoft.com
