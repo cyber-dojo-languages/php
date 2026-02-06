@@ -1,4 +1,5 @@
-#!/bin/bash -Eeu
+#!/usr/bin/env bash
+set -Eeu
 
 readonly REGEX="image_name\": \"(.*)\""
 readonly JSON=`cat docker/image_name.json`
@@ -6,8 +7,8 @@ readonly JSON=`cat docker/image_name.json`
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
 readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
-readonly EXPECTED=8.1.7
-readonly ACTUAL=$(docker run --rm -it ${IMAGE_NAME} sh -c 'php --version')
+readonly EXPECTED=8.2.30
+readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'php --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
   echo "VERSION CONFIRMED as ${EXPECTED}"
