@@ -1,3 +1,6 @@
-FROM php:8.4.17-zts
-LABEL maintiner=jon@jaggersoft.com
+# The floating zts tag, so a rebuild picks up the newest stable php release.
+# It is published as an index holding real amd64 and arm64 layers, so each
+# runner builds from binaries its own kernel can exec.
+FROM php:zts
+LABEL maintainer=jon@jaggersoft.com
 
